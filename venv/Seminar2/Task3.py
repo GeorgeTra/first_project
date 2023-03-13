@@ -9,5 +9,21 @@
 # ✔ Избегайте магических чисел
 # ✔ Добавьте аннотацию типов где это возможно
 
-a = int(input("Enter a number: "))
-print(a)
+d = int(input("Enter a number: "))
+print(bin(d))
+MOD = 2
+string = ""
+while d > 0:
+    string = str((d % MOD)) + string
+    d //= MOD
+print(string)
+
+
+d = int(input("Enter a number: "))
+print(oct(d))
+string = ""
+MOD = 8
+while d > 0:
+    string = str(d % MOD) + string
+    d //= MOD
+print(string)
