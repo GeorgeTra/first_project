@@ -9,16 +9,14 @@
 # ✔ результат проверки на строку только если он положительный
 # Добавьте в список повторяющиеся элементы и сравните на результаты.
 
+
 data = [5, 'Hello', 3.25]
-count = 0
-for i in data:
-    count += 1
-    print(count, i, end=' ')
-    print(id(i), i.__sizeof__(), hash(i))
-    if type(i) == int:
+for count, i in enumerate(data, start=1):
+    print(f"{count=}, {i}, memory address {id(i)}, memory size {i.__sizeof__()}, hash {hash(i)}")
+    if isinstance(i, int):
         print(i, 'это целое число')
     if type(i) == str:
-        print(i, 'это строка')
+        print(f"{i} это строка")
 
 
 data.append('Hello')
