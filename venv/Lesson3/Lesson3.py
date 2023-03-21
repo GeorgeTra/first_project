@@ -136,14 +136,126 @@
 # for key in my_dict.keys():
 #     print(key)
 
-my_dict = {'one': 1,
- 'two': 2,
- 'three': 3,
- 'four': 4,
- 'ten': 10,
- }
-print(my_dict.setdefault('ten', 555))
-print(my_dict.values())
-print(my_dict.pop('one'))
-my_dict['one'] = my_dict['four']
-print(my_dict)
+# my_dict = {'one': 1,
+#  'two': 2,
+#  'three': 3,
+#  'four': 4,
+#  'ten': 10,
+#  }
+# print(my_dict.setdefault('ten', 555))
+# print(my_dict.values())
+# print(my_dict.pop('one'))
+# my_dict['one'] = my_dict['four']
+# print(my_dict)
+
+# my_set = frozenset({3, 4, 1, 2, 5, 6, 1, 7, 2, 7})
+# print(len(my_set))
+# print(my_set - {1, 2, 3})
+# print(my_set.union({2, 4, 6, 8}))
+# print(my_set & {2, 4, 6, 8})
+# print(my_set.discard(10))
+
+# my_dict = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'ten': 10}
+# print(my_dict.values())
+# for value in my_dict.values():
+#     print(value)
+
+# my_dict = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'ten': 10}
+# print(my_dict.items())
+# for tuple_data in my_dict.items():
+#     print(tuple_data)
+# for key, value in my_dict.items():
+#     print(f'{key = } value before 100 - {100 - value}')
+
+# my_dict = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'ten': 10}
+# spam = my_dict.popitem()
+# print(f'{spam = }\t{my_dict=}')
+# eggs = my_dict.popitem()
+# print(f'{eggs = }\t{my_dict=}')
+
+# my_dict = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'ten': 10}
+# spam = my_dict.pop('two')
+# print(f'{spam = }\t{my_dict=}')
+
+# my_dict = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'ten': 10}
+# my_dict.update(dict(six=6))
+# print(my_dict)
+# my_dict.update(dict([('five', 5), ('two', 42)]))
+# print(my_dict)
+
+# my_dict = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'ten': 10}
+# new_dict = my_dict | {'five': 5, 'two': 42} | dict(six=6)
+# print(new_dict)
+
+# my_dict = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'ten': 10}
+# print(my_dict.setdefault('te'))
+# print(my_dict.values())
+# print(my_dict.pop('one'))
+# my_dict['one'] = my_dict['four']
+# print(my_dict)
+
+# my_set = {1, 2, 3, 4, 2, 5, 6, 7}
+# print(my_set)
+# my_f_set = frozenset((1, 2, 3, 4, 2, 5, 6, 7,))
+# print(my_f_set)
+# not_set = {1, 2, 3, 4, 2, 5, 6, 7, ['a', 'b']}
+
+# my_set = {3, 4, 2, 5, 6, 1, 7}
+# my_set.add(9)
+# print(my_set)
+# my_set.add(7)
+# print(my_set)
+# my_set.add((9, 10))
+# print(my_set)
+
+# my_set = {3, 4, 2, 5, 6, 1, 7}
+# my_set.remove(5)
+# print(my_set)
+# my_set.discard(10)
+# print(my_set)
+
+# my_set = {3, 4, 2, 5, 6, 1, 7}
+# other_set = {1, 4, 42, 314}
+# new_set = my_set.intersection(other_set)
+# print(f'{my_set = }\n{other_set = }\n{new_set = }')
+
+# my_set = {3, 4, 2, 5, 6, 1, 7}
+# other_set = {1, 4, 42, 314}
+# new_set = my_set & other_set
+# print(f'{my_set = }\n{other_set = }\n{new_set = }')
+
+# my_set = {3, 4, 2, 5, 6, 1, 7}
+# other_set = {1, 4, 42, 314}
+# new_set = my_set.union(other_set)
+# print(f'{my_set = }\n{other_set = }\n{new_set = }')
+# new_set_2 = my_set | other_set
+# print(f'{my_set = }\n{other_set = }\n{new_set_2 = }')
+
+# my_set = {3, 4, 2, 5, 6, 1, 7}
+# other_set = {1, 4, 42, 314}
+# new_set = my_set.difference(other_set)
+# print(f'{my_set = }\n{other_set = }\n{new_set = }')
+# new_set_2 = my_set - other_set
+# print(f'{my_set = }\n{other_set = }\n{new_set_2 = }')
+
+# my_set = {3, 4, 2, 5, 6, 1, 7}
+# print(42 in my_set)
+
+# my_set = frozenset({3, 4, 1, 2, 5, 6, 1, 7, 2, 7})
+# print(len(my_set))
+# print(my_set - {1, 2, 3})
+# print(my_set.union({2, 4, 6, 8}))
+# print(my_set)
+# print(my_set & {2, 4, 6, 8})
+# print(my_set.discard(10))
+
+# text_en = 'Hello world!'
+# res = text_en.encode('utf-8')
+# print(res, type(res))
+# text_ru = 'Привет, мир!'
+# res = text_ru.encode('utf-8')
+# print(res, type(res))
+
+x = bytes(b'\xd0\x9f\xd1\x80\xd0\xb8')
+y = bytearray(b'\xd0\x9f\xd1\x80\xd0\xb8')
+print(f'{x = }\n{y = }')
