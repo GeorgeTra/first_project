@@ -8,6 +8,7 @@
 
 
 def func(names: list[str], salaries: list[int], cash_prizes: list[str]) -> dict[str, float]:
+    l = len(names), len(salaries), len(cash_prizes)
     if len({(l := len(names)), len(salaries), len(cash_prizes)}) != 1:
         raise ValueError(f'Lengths of all three lists must be the same!!!')
     return {names[i]: (salaries[i] * float(cash_prizes[i].split('%')[0]) / 100) for i in range(l)}
