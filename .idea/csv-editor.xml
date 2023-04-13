@@ -31,6 +31,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\venv\Seminar9\Homework\random.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
