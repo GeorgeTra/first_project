@@ -43,5 +43,6 @@ class Reptiles(Animal):
         return f'{type(self).__name__} area = {self.area} info: {self.info}'
 
 
-d = Reptiles("river", "crocodile")
-print(d)
+if __name__ == '__main__':
+    d = Reptiles("river", "crocodile")
+    print(d)
