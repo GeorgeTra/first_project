@@ -24,6 +24,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\venv\Seminar12\Homework\lessons.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\venv\Seminar8\Homework\direct_info.csv">
           <value>
             <Attribute>
