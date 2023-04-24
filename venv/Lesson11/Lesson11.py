@@ -214,16 +214,38 @@
 # if __name__ == '__main__':
 #     std_one = User('Гвидо ван', 'Россум')
 
-class Solution:
-    def __init__(self):
-        self.s = s
-    def romanToInt(s: str) -> int:
-        rti = {'I': 1, 'V': 5, 'X': 10, 'L': 50, "C": 100, 'D': 500, 'M': 1000}
-        s = s.replace('IV', 'IIII').replace('IX', 'VIIII').replace('XL', 'XXXX').replace('XC', 'LXXXX').replace('CD',
-        'CCCC').replace('CM', 'DCCCC')
-        return sum(map(lambda x: rti[x], s))
+
+# class Solution:
+#     def __init__(self):
+#         self.s = s
+#     def romanToInt(s: str) -> int:
+#         rti = {'I': 1, 'V': 5, 'X': 10, 'L': 50, "C": 100, 'D': 500, 'M': 1000}
+#         s = s.replace('IV', 'IIII').replace('IX', 'VIIII').replace('XL', 'XXXX').replace('XC', 'LXXXX').replace('CD',
+#         'CCCC').replace('CM', 'DCCCC')
+#         return sum(map(lambda x: rti[x], s))
+#
+#
+# s = Solution.romanToInt('MCMXCIV')
+# print(s)
 
 
-s = Solution.romanToInt('MCMXCIV')
-print(s)
-
+# class Solution:
+#     def __init__(self, word1, word2):
+#         self.word1 = word1
+#         self.word2 = word2
+#
+#     def mergeAlternately(word1, word2):
+#         result = []
+#         n = max(len(word1), len(word2))
+#         for i in range(n):
+#             if i < len(word1):
+#                 result += word1[i]
+#             if i < len(word2):
+#                 result += word2[i]
+#         return "".join(result)
+#
+#
+# if __name__ == '__main__':
+#     s = Solution.mergeAlternately('abcd', 'ef')
+#     assert s != 'aebfcd', "We've got a problem!"
+#     print(s)
