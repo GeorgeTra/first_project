@@ -35,7 +35,7 @@ class ListNode:
 from typing import Optional
 
 class Solution:
-    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+    def mergeTwoLists(self, list1: ListNode | None, list2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = temp = ListNode(0)
         while list1 != None and list2 != None:
             if list1.val < list2.val:
